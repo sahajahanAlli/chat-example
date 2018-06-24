@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Chat</title>
+    <style>
+        button {
+            width: 100px;
+            padding: 7px;
+            border-right: 7px;
+            border-color: white;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class=" container jumbotron">
+            <center>
+                <h1>Chat Application</h1>
+            </center>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <center><button class="btn btn-primary" id=user1>User 1</button><button class="btn btn-primary" id=user2>User2</button></center>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('#user1').click(function() {
+                console.log('chat is called')
+                window.open('user1', 'chat window user1', 'height=650,width=400,toolbar=no,status=no')
+            })
+            $('#user2').click(function() {
+                console.log('chat is called')
+                window.open('user2', 'chat window user2', 'height=650,width=400,toolbar=no,status=no')
+            })
+        })
+    </script>
+
+</body>
+
+</html>
